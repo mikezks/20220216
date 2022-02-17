@@ -1,7 +1,7 @@
 {
   "npmScope": "flight-workspace",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "implicitDependencies": {
     "angular.json": "*",
@@ -14,17 +14,17 @@
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "tasksRunnerOptions": {
+  "--tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "--cacheDirectory": "c:\\temp\\cache",
+        "--cacheDirectory": "z:\\temp\\cache",
         "parallel": 1
       }
     }
   },
-  "--tasksRunnerOptions": {
+  "tasksRunnerOptions": {
     "default": {
       "runner": "./tools/task-runners/custom-task-runner",
       "options": {
