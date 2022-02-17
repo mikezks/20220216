@@ -421,7 +421,7 @@
       "prefix": "flight-workspace",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@nrwl/angular:webpack-browser",
           "options": {
             "outputPath": "dist/apps/flight-app",
             "index": "apps/flight-app/src/index.html",
@@ -445,7 +445,11 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "customWebpackConfig": {
+              "path": "apps/flight-app/webpack.config.js"
+            },
+            "commonChunk": false
           },
           "configurations": {
             "production": {
@@ -473,14 +477,19 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "customWebpackConfig": {
+                "path": "apps/flight-app/webpack.prod.config.js"
+              }
             }
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@nrwl/angular:webpack-server",
           "options": {
-            "browserTarget": "flight-app:build"
+            "browserTarget": "flight-app:build",
+            "port": 5000,
+            "publicHost": "http://localhost:5000"
           },
           "configurations": {
             "production": {
@@ -489,9 +498,10 @@
           }
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "ngx-build-plus:extract-i18n",
           "options": {
-            "browserTarget": "flight-app:build"
+            "browserTarget": "flight-app:build",
+            "extraWebpackConfig": "apps/flight-app/webpack.config.js"
           }
         },
         "lint": {
@@ -878,7 +888,7 @@
       "prefix": "flight-workspace",
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:browser",
+          "builder": "@nrwl/angular:webpack-browser",
           "options": {
             "outputPath": "dist/apps/passenger",
             "index": "apps/passenger/src/index.html",
@@ -898,7 +908,10 @@
               "apps/flight-app/src/assets/css/themify-icons.css"
             ],
             "scripts": [],
-            "commonChunk": false
+            "commonChunk": false,
+            "customWebpackConfig": {
+              "path": "apps/passenger/webpack.config.js"
+            }
           },
           "configurations": {
             "production": {
@@ -920,7 +933,10 @@
                   "with": "apps/passenger/src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "customWebpackConfig": {
+                "path": "apps/passenger/webpack.prod.config.js"
+              }
             },
             "development": {
               "buildOptimizer": false,
@@ -934,7 +950,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "ngx-build-plus:dev-server",
+          "builder": "@nrwl/angular:webpack-server",
           "configurations": {
             "production": {
               "browserTarget": "passenger:build:production"
@@ -945,13 +961,15 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 3000
+            "port": 3000,
+            "publicHost": "http://localhost:3000"
           }
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "ngx-build-plus:extract-i18n",
           "options": {
-            "browserTarget": "passenger:build"
+            "browserTarget": "passenger:build",
+            "extraWebpackConfig": "apps/passenger/webpack.config.js"
           }
         },
         "lint": {
@@ -1130,6 +1148,48 @@
         }
       },
       "tags": ["domain:passenger", "type:feature"]
+    },
+    "shared-util-auth": {
+      "projectType": "library",
+      "root": "libs/shared/util-auth",
+      "sourceRoot": "libs/shared/util-auth/src",
+      "prefix": "auth",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/shared/util-auth"],
+          "options": {
+            "project": "libs/shared/util-auth/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/shared/util-auth/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/shared/util-auth/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/util-auth"],
+          "options": {
+            "jestConfig": "libs/shared/util-auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/util-auth/src/**/*.ts",
+              "libs/shared/util-auth/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["domain:shared", "type:util"]
     }
   }
 }

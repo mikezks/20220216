@@ -1,17 +1,6 @@
-import {enableProdMode} from '@angular/core';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { loadRemoteEntry } from '@angular-architects/module-federation';
 
-import {AppModule} from './app/app.module';
-import {environment} from './environments/environment';
-
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule);
-
-
-
-
-
-
+// ab ng13: type:'module'
+loadRemoteEntry({type:'module', remoteEntry: 'http://localhost:3000/remoteEntry.js'})
+	.then(() => import('./bootstrap'))
+	.catch(err => console.error(err));
