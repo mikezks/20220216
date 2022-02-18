@@ -14,7 +14,7 @@
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "--tasksRunnerOptions": {
+  "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
@@ -29,7 +29,7 @@
       }
     }
   },
-  "tasksRunnerOptions": {
+  "--tasksRunnerOptions": {
     "default": {
       "runner": "./tools/task-runners/custom-task-runner",
       "options": {
@@ -44,7 +44,7 @@
     }
   },
   "targetDependencies": {
-    "build": [
+    "--build": [
       {
         "target": "build",
         "projects": "dependencies"

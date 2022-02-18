@@ -60,7 +60,7 @@
   "devDependencies": {
     "@angular-architects/ddd": "^2.0.0",
     "@angular-architects/module-federation": "^14.1.1",
-    "@angular-architects/module-federation-tools": "^14.0.2",
+    "@angular-architects/module-federation-tools": "^14.1.1",
     "@angular-devkit/build-angular": "13.1.4",
     "@angular-eslint/eslint-plugin": "13.0.1",
     "@angular-eslint/eslint-plugin-template": "13.0.1",

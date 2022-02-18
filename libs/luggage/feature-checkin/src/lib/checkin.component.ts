@@ -13,6 +13,16 @@ export class CheckinComponent implements OnInit {
 
   ngOnInit() {
     this.load();
+    this.load();
+    this.load();
+    this.load();
+    this.load();
+    this.load();
+    this.load();
+    this.load();
+    this.load();
+    this.load();
+
   }
 
   load(): void {

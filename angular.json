@@ -839,6 +839,342 @@
       },
       "tags": ["domain:luggage", "type:feature"]
     },
+    "luggage-feature-f01": {
+      "projectType": "library",
+      "root": "libs/luggage/feature-f01",
+      "sourceRoot": "libs/luggage/feature-f01/src",
+      "prefix": "luggage",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/luggage/feature-f01"],
+          "options": {
+            "project": "libs/luggage/feature-f01/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/luggage/feature-f01/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/luggage/feature-f01/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/luggage/feature-f01"],
+          "options": {
+            "jestConfig": "libs/luggage/feature-f01/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/luggage/feature-f01/src/**/*.ts",
+              "libs/luggage/feature-f01/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    "luggage-feature-f02": {
+      "projectType": "library",
+      "root": "libs/luggage/feature-f02",
+      "sourceRoot": "libs/luggage/feature-f02/src",
+      "prefix": "luggage",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/luggage/feature-f02"],
+          "options": {
+            "project": "libs/luggage/feature-f02/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/luggage/feature-f02/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/luggage/feature-f02/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/luggage/feature-f02"],
+          "options": {
+            "jestConfig": "libs/luggage/feature-f02/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/luggage/feature-f02/src/**/*.ts",
+              "libs/luggage/feature-f02/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    "luggage-feature-f03": {
+      "projectType": "library",
+      "root": "libs/luggage/feature-f03",
+      "sourceRoot": "libs/luggage/feature-f03/src",
+      "prefix": "luggage",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/luggage/feature-f03"],
+          "options": {
+            "project": "libs/luggage/feature-f03/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/luggage/feature-f03/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/luggage/feature-f03/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/luggage/feature-f03"],
+          "options": {
+            "jestConfig": "libs/luggage/feature-f03/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/luggage/feature-f03/src/**/*.ts",
+              "libs/luggage/feature-f03/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    "luggage-feature-f04": {
+      "projectType": "library",
+      "root": "libs/luggage/feature-f04",
+      "sourceRoot": "libs/luggage/feature-f04/src",
+      "prefix": "luggage",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/luggage/feature-f04"],
+          "options": {
+            "project": "libs/luggage/feature-f04/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/luggage/feature-f04/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/luggage/feature-f04/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/luggage/feature-f04"],
+          "options": {
+            "jestConfig": "libs/luggage/feature-f04/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/luggage/feature-f04/src/**/*.ts",
+              "libs/luggage/feature-f04/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    "luggage-feature-f05": {
+      "projectType": "library",
+      "root": "libs/luggage/feature-f05",
+      "sourceRoot": "libs/luggage/feature-f05/src",
+      "prefix": "luggage",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/luggage/feature-f05"],
+          "options": {
+            "project": "libs/luggage/feature-f05/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/luggage/feature-f05/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/luggage/feature-f05/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/luggage/feature-f05"],
+          "options": {
+            "jestConfig": "libs/luggage/feature-f05/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/luggage/feature-f05/src/**/*.ts",
+              "libs/luggage/feature-f05/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    "luggage-feature-f06": {
+      "projectType": "library",
+      "root": "libs/luggage/feature-f06",
+      "sourceRoot": "libs/luggage/feature-f06/src",
+      "prefix": "luggage",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/luggage/feature-f06"],
+          "options": {
+            "project": "libs/luggage/feature-f06/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/luggage/feature-f06/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/luggage/feature-f06/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/luggage/feature-f06"],
+          "options": {
+            "jestConfig": "libs/luggage/feature-f06/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/luggage/feature-f06/src/**/*.ts",
+              "libs/luggage/feature-f06/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    "luggage-feature-f07": {
+      "projectType": "library",
+      "root": "libs/luggage/feature-f07",
+      "sourceRoot": "libs/luggage/feature-f07/src",
+      "prefix": "luggage",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/luggage/feature-f07"],
+          "options": {
+            "project": "libs/luggage/feature-f07/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/luggage/feature-f07/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/luggage/feature-f07/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/luggage/feature-f07"],
+          "options": {
+            "jestConfig": "libs/luggage/feature-f07/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/luggage/feature-f07/src/**/*.ts",
+              "libs/luggage/feature-f07/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    "luggage-feature-f08": {
+      "projectType": "library",
+      "root": "libs/luggage/feature-f08",
+      "sourceRoot": "libs/luggage/feature-f08/src",
+      "prefix": "luggage",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/luggage/feature-f08"],
+          "options": {
+            "project": "libs/luggage/feature-f08/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/luggage/feature-f08/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/luggage/feature-f08/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/luggage/feature-f08"],
+          "options": {
+            "jestConfig": "libs/luggage/feature-f08/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/luggage/feature-f08/src/**/*.ts",
+              "libs/luggage/feature-f08/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["domain:luggage", "type:feature"]
+    },
     "luggage-feature-report-loss": {
       "projectType": "library",
       "root": "libs/luggage/feature-report-loss",

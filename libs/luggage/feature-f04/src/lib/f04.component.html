@@ -1,0 +1,9 @@
+<h1>luggage-f04</h1>
+
+<table class="table">
+  <tr *ngFor="let entity04 of entity04List$ | async">
+    <td>{{ entity04.id }}</td>
+    <td>{{ entity04.name }}</td>
+    <td>{{ entity04.description }}</td>
+  </tr>
+</table>

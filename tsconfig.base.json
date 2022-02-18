@@ -22,6 +22,30 @@
       "@flight-workspace/luggage/feature-checkin": [
         "libs/luggage/feature-checkin/src/index.ts"
       ],
+      "@flight-workspace/luggage/feature-f01": [
+        "libs/luggage/feature-f01/src/index.ts"
+      ],
+      "@flight-workspace/luggage/feature-f02": [
+        "libs/luggage/feature-f02/src/index.ts"
+      ],
+      "@flight-workspace/luggage/feature-f03": [
+        "libs/luggage/feature-f03/src/index.ts"
+      ],
+      "@flight-workspace/luggage/feature-f04": [
+        "libs/luggage/feature-f04/src/index.ts"
+      ],
+      "@flight-workspace/luggage/feature-f05": [
+        "libs/luggage/feature-f05/src/index.ts"
+      ],
+      "@flight-workspace/luggage/feature-f06": [
+        "libs/luggage/feature-f06/src/index.ts"
+      ],
+      "@flight-workspace/luggage/feature-f07": [
+        "libs/luggage/feature-f07/src/index.ts"
+      ],
+      "@flight-workspace/luggage/feature-f08": [
+        "libs/luggage/feature-f08/src/index.ts"
+      ],
       "@flight-workspace/luggage/feature-report-loss": [
         "libs/luggage/feature-report-loss/src/index.ts"
       ],
